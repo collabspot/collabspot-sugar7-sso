@@ -1,0 +1,6 @@
+window.opener.postMessage('{$authorization|@json|escape:javascript}', 'https://pulse-staging.collabspot.com');
+window.opener.postMessage('{$authorization|@json|escape:javascript}', 'https://clbspot.localhost.com');
+window.opener.postMessage('{$authorization|@json|escape:javascript}', 'http://localhost:8080');
+window.opener.postMessage('{$authorization|@json|escape:javascript}', 'https://collabspotinbox.firebaseapp.com');
+window.opener.postMessage('{$authorization|@json|escape:javascript}', 'https://collabspot-chris.firebaseapp.com');
+window.opener.postMessage('{$authorization|@json|escape:javascript}', 'https://collabspot-v3.storage.googleapis.com');
