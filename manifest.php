@@ -2,7 +2,7 @@
 $manifest = array (
   'id' => 'collabspot-sso',
   'name' => 'Collabspot SSO Integration',
-  'description' => 'Registers Collabspot\'s URLs as valid recipients for SSO tokens.',
+  'description' => 'Modifies AuthenticateParent.tpl to allow Collabspot to leverage the authentication tokens sent from the IdP to Sugar.',
   'version' => '1.0.0',
   'author' => 'Collabspot',
   'is_uninstallable' => 'true',
