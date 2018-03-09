@@ -1,3 +1,4 @@
+window.opener.postMessage('{$authorization|@json|escape:javascript}', 'https://wmp-highrise-plugin-2.appspot.com');
 window.opener.postMessage('{$authorization|@json|escape:javascript}', 'https://pulse-staging.collabspot.com');
 window.opener.postMessage('{$authorization|@json|escape:javascript}', 'https://clbspot.localhost.com');
 window.opener.postMessage('{$authorization|@json|escape:javascript}', 'http://localhost:8080');
