@@ -1,5 +1,5 @@
 MANIFEST_VERSION := $(shell grep "'version' => " manifest.php | cut -d' ' -f 5 | sed "s/'//g" | sed "s/,//g")
-ZIP_FILE := collabspot-sugar7-platform-$(MANIFEST_VERSION).zip
+ZIP_FILE := collabspot-sugar7-sso-$(MANIFEST_VERSION).zip
 
 zip:
 	zip -r $(ZIP_FILE) manifest.php src
@@ -18,15 +18,15 @@ zip_dev:
 	# append contents of extra_domains.txt to AuthenticateParent.tpl
 	sed '/\/\/ Extras/r extra_domains.txt' < src/custom/modules/Users/tpls/AuthenticateParent.tpl > AuthenticateParent.tpl.tmp
 	mv AuthenticateParent.tpl.tmp src/custom/modules/Users/tpls/AuthenticateParent.tpl
-	zip -r collabspot-sugar7-platform-$(MANIFEST_VERSION)-dev.zip manifest.php src/custom/modules/Users/tpls/AuthenticateParent.tpl
+	zip -r collabspot-sugar7-sso-$(MANIFEST_VERSION)-dev.zip manifest.php src/custom/modules/Users/tpls/AuthenticateParent.tpl
 	# revert files
 	mv manifest.php.bak manifest.php
 	mv src/custom/modules/Users/tpls/AuthenticateParent.tpl.bak src/custom/modules/Users/tpls/AuthenticateParent.tpl
 	@echo "Review the contents:"
 	@echo "=========="
-	@unzip -c collabspot-sugar7-platform-$(MANIFEST_VERSION)-dev.zip src/custom/modules/Users/tpls/AuthenticateParent.tpl
+	@unzip -c collabspot-sugar7-sso-$(MANIFEST_VERSION)-dev.zip src/custom/modules/Users/tpls/AuthenticateParent.tpl
 	@echo "=========="
-	@echo "Zipped to collabspot-sugar7-platform-$(MANIFEST_VERSION)-dev.zip"
+	@echo "Zipped to collabspot-sugar7-sso-$(MANIFEST_VERSION)-dev.zip"
 
 help:
 	@echo "zip - (default) generate zip file"
