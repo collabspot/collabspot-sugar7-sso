@@ -3,7 +3,7 @@ $manifest = array (
   'id' => 'collabspot-sso',
   'name' => 'Collabspot SSO Integration',
   'description' => 'Modifies AuthenticateParent.tpl to allow Collabspot to leverage the authentication tokens sent from the IdP to Sugar.',
-  'version' => '1.1.0',
+  'version' => '1.1.1',
   'author' => 'Collabspot',
   'is_uninstallable' => 'true',
   'published_date' => '2018-07-08 11:00:00',
@@ -13,7 +13,7 @@ $manifest = array (
       0 => '^7.9.[\\d]+.[\\d]+$',
       1 => '^7.10.[\\d]+.[\\d]+$',
       2 => '^7.11.[\\d]+.[\\d]+$',
-      3 => '^8.[\\d]+.[\\d]+.[\\d]+$',
+      3 => '^8.[\\d]+.[\\d]+$',
     ),
   ),
 );
